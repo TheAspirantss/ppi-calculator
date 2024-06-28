@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PPI Calculator</h1>
+        <p>Branch: Electronics & Communication Engg.</p>
+        <p>Semester: 06</p>
+    </header>
+    <main>
+        <div class="calculator">
+            <label for="current-ppi">Enter Current PPI:</label>
+            <input type="number" id="current-ppi" step="0.01" required>
+            
+            <label for="sem-spi">Enter 6th Sem SPI: (<a href="https://rarevyom09.github.io/ppispi/" target="_blank">Calculate SPI</a>)</label>
+            <input type="number" id="sem-spi" step="0.01" required>
+            
+            <button onclick="calculatePPI()">Calculate PPI</button>
+            
+            <p id="ppi-result"></p>
+        </div>
+    </main>
+    <footer>
+        <p>In case of any query/feedback, mail us: <a href="mailto:mailto:theaspirants1@gmail.com">Aspirants</a></p>
+        <p>© 2023 The Aspirants</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
