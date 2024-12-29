@@ -10,15 +10,18 @@
     <header>
         <h1>PPI Calculator</h1>
         <p>Branch: Electronics & Communication Engg.</p>
-        <p>Semester: 06</p>
+        <p>Semester: 07</p>
     </header>
     <main>
         <div class="calculator">
-            <label for="current-ppi">Enter <b>PPI</b> upto 5th sem:</label>
+            <label for="current-ppi">Enter <b>PPI</b> upto 6th sem:</label>
             <input type="number" id="current-ppi" step="0.01" required max="10" min="0">
+            <p id="ppiError"></p>
             
-            <label for="sem-spi">Enter 6th Sem <b>SPI</b>: (<a href="https://rarevyom09.github.io/ppispi/" target="_blank">Calculate SPI</a>)</label>
+            <label for="sem-spi">Enter 7th Sem SPI: (<a href="https://rarevyom09.github.io/ppispi/" target="_blank">Calculate SPI</a>)</label>
             <input type="number" id="sem-spi" step="0.01" required max="10" min="0">
+            <p id="spiError"></p>
+
             
             <button onclick="calculatePPI()">Calculate PPI</button>
             
